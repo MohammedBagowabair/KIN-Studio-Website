@@ -4,14 +4,15 @@ export const maps = 'https://www.google.com/maps/place/K.IN+Studio/@3.1200964,10
 export const linkedin = 'https://linkedin.com/company/k-in-studio'
 export const behance = 'https://www.behance.net/kinstudio'
 export const pitchWa = 'https://wa.me/601151198497'
+export const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
 
 export const projects = [
-  { titleEN: 'Pandan Perdana Flat', titleMS: 'Flat Pandan Perdana', typeEN: 'Residential', typeMS: 'Kediaman', img: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80', tall: true },
-  { titleEN: 'Minimal Retail Fit-out', titleMS: 'Fit-out Runcit Minimal', typeEN: 'Commercial', typeMS: 'Komersial', img: 'https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=1200&q=80', tall: false },
-  { titleEN: 'Oak & Stone Kitchen', titleMS: 'Dapur Oak & Batu', typeEN: 'Kitchen', typeMS: 'Dapur', img: 'https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=1200&q=80', tall: false },
-  { titleEN: 'Quiet Study Corner', titleMS: 'Sudut Belajar Tenang', typeEN: 'Residential', typeMS: 'Kediaman', img: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=1200&q=80', tall: true },
-  { titleEN: 'Open Plan Living', titleMS: 'Ruang Tamu Terbuka', typeEN: 'Living', typeMS: 'Ruang tamu', img: 'https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=1200&q=80', tall: false },
-  { titleEN: 'Monochrome Suite', titleMS: 'Suite Monokrom', typeEN: 'Bedroom', typeMS: 'Bilik tidur', img: 'https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=1200&q=80', tall: true },
+  { titleEN: 'Pandan Perdana Flat', titleMS: 'Flat Pandan Perdana', typeEN: 'Residential', typeMS: 'Kediaman', img: 'images/p1.jpg', tall: true },
+  { titleEN: 'Minimal Retail Fit-out', titleMS: 'Fit-out Runcit Minimal', typeEN: 'Commercial', typeMS: 'Komersial', img: 'images/p2.jpg', tall: false },
+  { titleEN: 'Oak & Stone Kitchen', titleMS: 'Dapur Oak & Batu', typeEN: 'Kitchen', typeMS: 'Dapur', img: 'images/p3.jpg', tall: false },
+  { titleEN: 'Quiet Study Corner', titleMS: 'Sudut Belajar Tenang', typeEN: 'Residential', typeMS: 'Kediaman', img: 'images/p4.jpg', tall: true },
+  { titleEN: 'Open Plan Living', titleMS: 'Ruang Tamu Terbuka', typeEN: 'Living', typeMS: 'Ruang tamu', img: 'images/p5.jpg', tall: false },
+  { titleEN: 'Monochrome Suite', titleMS: 'Suite Monokrom', typeEN: 'Bedroom', typeMS: 'Bilik tidur', img: 'images/p6.jpg', tall: true },
 ]
 
 export const dict = {
@@ -43,7 +44,7 @@ export const dict = {
     contact_phone: 'Call', contact_wa: 'WhatsApp', contact_map: 'Maps', contact_li: 'LinkedIn', contact_be: 'Behance',
     footer_pitch: 'Website concept prepared for this studio. Not an official site yet — open to making it yours.',
     footer_pitch_cta: 'Message mr.bagowabair', footer_copy: '© K.IN Studio · Concept site',
-    lang_en: 'EN', lang_ms: 'BM',
+    lang_en: 'EN', lang_ms: 'BM', menu_open: 'Menu', menu_close: 'Close',
   },
   ms: {
     nav_about: 'Studio', nav_work: 'Projek', nav_services: 'Perkhidmatan', nav_process: 'Pendekatan', nav_contact: 'Hubungi', nav_cta: 'Mula projek',
@@ -73,6 +74,6 @@ export const dict = {
     contact_phone: 'Telefon', contact_wa: 'WhatsApp', contact_map: 'Maps', contact_li: 'LinkedIn', contact_be: 'Behance',
     footer_pitch: 'Konsep laman web disediakan untuk studio ini. Bukan laman rasmi lagi — sedia dijadikan milik anda.',
     footer_pitch_cta: 'Mesej mr.bagowabair', footer_copy: '© K.IN Studio · Laman konsep',
-    lang_en: 'EN', lang_ms: 'BM',
+    lang_en: 'EN', lang_ms: 'BM', menu_open: 'Menu', menu_close: 'Tutup',
   },
 } as const
